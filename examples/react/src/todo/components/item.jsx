@@ -41,7 +41,7 @@ export const Item = memo(function Item({ todo, dispatch }) {
                     onChange={toggleItem}
                 />
                 <label data-testid="todo-item-label" onDoubleClick={handleDoubleClick}>
-                    {title}
+                    {title} <span style={{ color: '#999', fontSize: '0.8em' }}>({title.length})</span>
                 </label>
                 <button
                     className="destroy"
