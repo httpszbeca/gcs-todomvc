@@ -137,6 +137,7 @@ export default class View {
 
     bindCallback(event, handler) {
         switch (event) {
+            // handler de criação de nova tarefa com trim - versão B
             case "newTodo":
                 $on(this.$newTodo, "change", () => handler(this.$newTodo.value));
                 break;
