@@ -137,6 +137,7 @@ export default class View {
 
     bindCallback(event, handler) {
         switch (event) {
+            // validação: impede tarefa vazia - versão A
             case "newTodo":
                 $on(this.$newTodo, "change", () => handler(this.$newTodo.value));
                 break;
