@@ -473,7 +473,6 @@ hr {
 }
 
 .todo-list li.completed label {
-    opacity: 0.7;
+    opacity: 0.6;
 }
-
 /*# sourceMappingURL=app.css.map*/
